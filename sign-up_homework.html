@@ -29,7 +29,7 @@
 				<!-- these links are relative paths -->
 				<li> <a href="#">Home</a></li>
 				<li> <a href="#">Gallery</a></li>
-				<li> <a href="sign-up_Homework.html">Join</a></li>
+				<li> <a href="sign-up_homework.html">Join</a></li>
 				<li> <a href="#">Community</a></li>
                 <li> <a href="#">Mobile App</a></li>
 				<li> <a href="http://www.google.com">Google</a></li>
@@ -45,7 +45,7 @@
             <!--action="php/processmyform.php"> <!--this "action" attribute tells the browser the address to where the data captured in the form shoud be sent for storage.-->
             <fieldset>
                <!-- <h2>Create An Account</h2>-->
-          <h3>Tell Us About You and One Favorite Activity</h3>
+            <h3>Tell Us About You and One Favorite Activity</h3>
           
 	     <!-- A Simple HTML5 Form that will use Javascript. The value of the Method attribute can be post or get. post is for a longer data set to be captured and stored. get is for sending very short bits of information to the server. Using get, the information actually travels in the URL itself. While it can be encrypted, often it is not.-->
                 <ul>
@@ -115,7 +115,7 @@
                       <option value;"Nov">November</option>
                       <option value;"Dec">December</option>
                     </select>
-                    <label>Birth day</label>
+                    <label>Birth Day</label>
                     <select name="day">
                       <option value;"1">1</option>
                       <option value;"2">2</option>
@@ -159,7 +159,7 @@
                       <input type="email" name="email" placeholder="tbd@tbd.com" required/>
                   </li>
                   <li>
-                    <label>Favorite activity</label>
+                    <label>Your Favorite Activity</label>
                     <select name="activity" >
                       <option value:"void">select one</option>
                       <option value;"hike">Hike</option>
@@ -174,8 +174,8 @@
                     </select>
                   </li>
                   <li>
-                    <label>Skill at Favorite Activity</label>
-                    
+                    <label>Your Skill (Favorite Activity)</label>
+                    <p>Rate 1 to 5: 1=Expert, 3=Practioner, 5=Novice.</p>
                     <select name="skill" >
                       <option value;"0">select</option>
                       <option value;"5">5</option>
@@ -183,21 +183,30 @@
                       <option value;"3">3</option>
                       <option value;"2">2</option>
                       <option value;"1">1</option>
-                      <p>Scaled 1 to 5: 1=Expert, 3=Practioner, 5=Novice.</p>
+                    </select>
                   </li>
-              </ul>
-              <p></p>
+                  <li>
+                    <label>Your Knowledge (Favorite Activity)</label>
+                    <p>Rate 1 to 5: 1=Expert, 3=Practioner, 5=Novice.</p>
+                    <select name="knowledge" >
+                      <option value;"0">select</option>
+                      <option value;"5">5</option>
+                      <option value;"4">4</option>
+                      <option value;"3">3</option>
+                      <option value;"2">2</option>
+                      <option value;"1">1</option>
+                    </select>
+                  </li>
           <!--    <p>If you would like to donate to The National Wildlife Fund, please select a dollar amount (from $0 to $101) from the pull-down menu. Thank you!</p>
               <li>
               <label>Optional: select a donation amount</label>
                   <input type="number" value="0"
                         max="101" min="0" placeholder="50" />
               </li>
-              </ul> -->
-              <p></p>
-            
-              <input type="submit" value="Submit" name="submit" />
+              </ul> 
               <!--addtional form controls that might be entered: middle name, ssn, years of education, street address, city, state, etc.-->              
+            </ul>
+              <input type="submit" value="Submit" name="submit" />
             </fieldset>
             
           </form> 
