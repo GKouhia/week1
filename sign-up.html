@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script>
+  $(function() {
+    //$( "#datepicker" ).datepicker();
+  });
+  </script>
+ <!-- jQuery CDN link....  
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	 -->
+		<meta charset="UTF-8">	
+		<title>HTML5: Week One</title>  
+		<!-- link to an external style sheet (best practice with style sheet)-->
+		<link href="css/styles.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body class="page"><!-- everything that is visual goes in the body tag  -->
+		<header>
+			<!-- the "banner" area or title of the page-->
+			<h1>HTML5: Week One</h1> <!-- only h1 per page (for SEO purposes) --> 	
+		</header>
+		<nav class="nav1"> 
+			<ul>
+				<!-- these links are relative paths -->
+				<li> <a href="#">home</a></li>
+				<li> <a href="#">gallery</a></li>
+				<li> <a href="sign-up.html">Sign Up Here</a></li>
+				<li> <a href="#">Mobile Site</a></li>
+				<li> <a href="http://www.google.com">Google</a></li>
+			</ul>
+		</nav>
+		<div id="mainContent">
+          <!-- We will use this mainContent div in each of our assignments or projects. -->
+        
+        <h3>If you want to connect with the community and post content, please create an account.</h3>
+          <h3>The following is a sentence intended to increase the vertical space in this section. </h3>
+        <p>The following is a form for signup!!!!!</p>
+	     <!-- A Simple HTML5 Form that will use Javascript. The value of the Method attribute can be post or get. post is for a longer data set to be captured and stored. get is for sending very short bits of information to the server. Using get, the information actually travels in the URL itself. While it can be encrypted, often it is not.-->
+		  <form id="sign-up-form" method="post" action="#" >
+            <!--action="php/processmyform.php"> <!--this "action" attribute tells the browser the address to where the data captured in the form shoud be sent for storage.-->
+            <fieldset>
+                <h2>Create An Account</h2>
+                <ul>
+                  <li>
+                      <!--parent of the label element and the form element-->
+                    <label id="f-name-label">First Name:</label>
+                    <input type="text" name="first-name" id="f-name-label" placeholder="first name" required />
+                  </li>
+                  <li>
+                    <label id="f-name-label">Last Name:</label>
+                    <input type="text" name="last-name" id="f-name-label" placeholder="last name" required />
+                  </li>
+                  <li>
+                    <label>Date of Birth Year</label>
+                    <select name="year">
+                      <option value;"1970">1970</option>
+                      <option value;"1971">1971</option>
+                      <option value;"1972">1972</option>
+                      <option value;"1973">1973</option>
+                      <option value;"1974">1974</option>
+                      <option value;"1975">1975</option>
+                    </select>
+                    <label>Date of Birth Month</label>
+                    <select name="month">
+                      <option value;"Jan">January</option>
+                      <option value;"Feb">February</option>
+                      <option value;"Mar">March</option>
+                      <option value;"Apr">April</option>
+                      <option value;"May">May</option>
+                      <option value;"Jun">June</option>
+                    </select>
+                    <label>Date of Birth day</label>
+                    <select name="day">
+                      <option value;"1">1</option>
+                      <option value;"2">2</option>
+                      <option value;"3">3</option>
+                      <option value;"4">4</option>
+                      <option value;"5">5</option>
+                      <option value;"6">6</option>
+                    </select>
+                  </li>
+                  <li>
+                      <label>Please Enter a Valid Email Address</label>
+                      <input type="email" name="email" />
+                  </li>
+                  <li>
+                      <label>Please Enter a Donation Amount</label>
+                      <input type="number" value="100"
+                             max="101" min="1" placeholder="100"
+                  </li>
+                  <li>
+                    <label>Enter Zip Code</label>
+                    <input type="text" required placeholder="90210" pattern="^[0-9]{5}" />
+                           <!--this is supposed to say that the user must enter numerals 0 thru 9 and must enter 5 digits-->
+                  
+                  </li>
+                </ul>
+                  <input type="submit" value="Sign Up" name="submit" />
+              <!--addtional form controls that might be entered: middle name, ssn, years of education, street address, city, state, etc.-->
+              
+            </fieldset>
+            
+          </form> 
+          
+            
+            	
+
+        </div><!-- closing maincContent div tag -->
+		
+		
+        <!--  This is the footer section, only footer stuff -->
+		<footer>
+			<p>&copy; copyright 2015</p>
+			
+		</footer>
+
+	</body>
+</html>
