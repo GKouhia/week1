@@ -1,0 +1,233 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script>
+  $(function() {
+    //$( "#datepicker" ).datepicker();
+  });
+  </script>
+ <!-- jQuery CDN link....  
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	 -->
+		<meta charset="UTF-8">	
+		<title>Join Our Community</title>  
+		<!-- link to an external style sheet (best practice with style sheet)-->
+		<link href="css/styles.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body class="page"><!-- everything that is visual goes in the body tag  -->
+		<header>
+			<!-- the "banner" area or title of the page-->
+		  <h1>Join Our Mail List</h1>	
+          <!-- only h1 per page (for SEO purposes) --> 	
+              
+		</header>
+		<nav class="nav1"> 
+			<ul>
+				<!-- these links are relative paths -->
+				<li> <a href="#">Home</a></li>
+				<li> <a href="#">Gallery</a></li>
+				<li> <a href="sign-up_homework.html">Join</a></li>
+				<li> <a href="#">Community</a></li>
+                <li> <a href="#">Mobile App</a></li>
+				<!--<li> <a href="http://www.google.com">Google</a></li>-->
+			</ul>
+		</nav>
+		<div id="mainContent">
+          <!-- We will use this mainContent div in each of our assignments or projects. -->
+          <h2>Sign Up To Get Connected</h2> 
+          <p>When you sign up for our mail list you'll receive monthly updates on new products and upcoming events, classes and activities. As a mail list member you'll also be able to post comments and reviews, which will be marked as submited by a Connected Member.</p>
+          <p>We exist to help you get the most from the great outdoors. To do the job well we'll use the information you provide below to improve our plans for the future.</p>
+          <p></p>
+		  <form id="sign-up-form" method="post" action="#" >
+            <!--action="php/processmyform.php"--> 
+<!-- this "action" attribute tells the browser the address to where the data captured in the form should be sent for storage.-->
+            <fieldset>
+               <!-- <h2>Create An Account</h2>-->
+            <h3>Tell Us About You and A Favorite Activity</h3>
+          
+	     <!-- A Simple HTML5 Form that will use Javascript. The value of the Method attribute can be post or get. post is for a longer data set to be captured and stored. get is for sending very short bits of information to the server. Using get, the information actually travels in the URL itself. While it can be encrypted, often it is not.-->
+                <ul>
+                  <li>
+                      <!--parent of the label element and the form element--> 
+                    
+                    <label id="f-name-label" >First Name:</label>
+                    <input type="text" name="first-name" 
+                           
+                    placeholder="first name" required />
+                    <!-- id="f-name-label" --> 
+                  </li>
+                  <li>
+                    <label id="l-name-label">Last Name:</label>
+                    <input type="text" name="last-name" placeholder="last name" required />
+                  </li>
+                  <li>
+                    <label>Birth Year</label>
+                    <select name="year">
+                      <option value="Before">Before 1953</option>
+                      <option value="1953">1953</option>
+                      <option value="1954">1954</option>
+                      <option value="1955">1955</option>
+                      <option value="1956">1956</option>
+                      <option value="1957">1957</option>
+                      <option value="1958">1958</option>
+                      <option value="1959">1959</option>
+                      <option value="1960">1960</option>
+                      <option value="1961">1961</option>
+                      <option value="1962">1962</option>
+                      <option value="1963">1963</option>
+                      <option value="1964">1964</option>
+                      <option value="1965">1965</option>
+                      <option value="1966">1966</option>
+                      <option value="1967">1967</option>
+                      <option value="1968">1968</option>
+                      <option value="1969">1969</option>
+                      <option value="1970">1970</option>
+                      <option value="1971">1971</option>
+                      <option value="1972">1972</option>
+                      <option value="1973">1973</option>
+                      <option value="1974">1974</option>
+                      <option value="1975">1975</option>
+                      <option value="1976">1976</option>
+                      <option value="1977">1977</option>
+                      <option value="1978">1978</option>
+                      <option value="1979">1979</option>
+                      <option value="1980">1980</option>
+                      <option value="1981">1981</option>
+                      <option value="1982">1982</option>
+                      <option value="1983">1983</option>
+                      <option value="1984">1984</option>
+                      <option value="1985">1985</option>
+                      <option value="1986">1986</option>
+                      <option value="1987">1987</option>
+                      <option value="1988">1988</option>
+                      <option value="Too Young">Too Young for List</option>
+                    </select>
+                    <label>Birth Month</label>
+                    <select name="month">
+                      <option value="Jan">January</option>
+                      <option value="Feb">February</option>
+                      <option value="Mar">March</option>
+                      <option value="Apr">April</option>
+                      <option value="May">May</option>
+                      <option value="Jun">June</option>
+                      <option value="Jul">July</option>
+                      <option value="Aug">August</option>
+                      <option value="Sep">September</option>
+                      <option value="Oct">October</option>
+                      <option value="Nov">November</option>
+                      <option value="Dec">December</option>
+                    </select>
+                    <label>Birth Day</label>
+                    <select name="day">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                      <option value="11">11</option>
+                      <option value="12">12</option>
+                      <option value="13">13</option>
+                      <option value="14">14</option>
+                      <option value="15">15</option>
+                      <option value="16">16</option>
+                      <option value="17">17</option>
+                      <option value="18">18</option>
+                      <option value="19">19</option>
+                      <option value="20">20</option>
+                      <option value="21">21</option>
+                      <option value="22">22</option>
+                      <option value="23">23</option>
+                      <option value="24">24</option>
+                      <option value="25">25</option>
+                      <option value="26">26</option>
+                      <option value="27">27</option>
+                      <option value="28">28</option>
+                      <option value="29">29</option>
+                      <option value="30">30</option>
+                      <option value="31">31</option>
+                    </select>
+                  </li>
+                  <li>
+                    <label>Home Zip Code (5 numerals, 0-9)</label>
+                    <input type="text" required placeholder="90210" pattern="^[0-9]{5}" />
+    <!--this is supposed to say that the user must enter numerals 0 thru 9 and must enter 5 digits-->
+                  <li>
+                      <label>Email Address</label>
+                      <input type="email" name="email" placeholder="tbd@tbd.com" required/> 
+                    
+                  </li>
+                  <li>
+                    <label>Your Favorite Activity</label>
+                    <select name="activity" >
+                      <option value="void">select one</option>
+                      <option value="hike">Hike</option>
+                      <option value="camp">Camp</option>
+                      <option value="climb">Climb</option>
+                      <option value="cycle">Dycle</option>
+                      <option value="paddle">Paddle</option>
+                      <option value="run">Run</option>
+                      <option value="snow">Snow</option>
+                      <option value="yoga">Yoga</option>
+                      <option value="travel">Travel</option>  
+                    </select>
+                  </li>
+                  <li>
+                    <label>Skill Level (Favorite Activity)</label>
+                    <p>Rate 1 to 5: 1=Expert, 2=Advanced, 3=Practioner, 4=Novice, 5=New to Activity.</p>
+                    <!-- <select name="knowledge" > -->
+                      <input type="number" name="quantity" min="1" max="5" placeholder="enter 1 thru 5" required>
+                    <!-- <select name="skill" form="select">
+                      <option value="5">5</option>
+                      <option value="4">4</option>
+                      <option value="3">3</option>
+                      <option value="2">2</option>
+                      <option value="1">1</option>
+                    </select> -->
+                  </li>
+                  <li>
+                    <label>Knowledge Level (Favorite Activity)</label>
+                    <p>Rate 1 to 5: 1=Expert, 2=Advanced, 3=Practioner, 4=Novice, 5=New to Activity.</p>
+                    <!-- <select name="knowledge" > -->
+                      <input type="number" name="quantity" min="1" max="5" placeholder="enter 1 thru 5" required>
+                      <!--<option value;"0">select</option>
+                      <option value="5">5</option>
+                      <option value="4">4</option>
+                      <option value="3">3</option>
+                      <option value="2">2</option>
+                      <option value="1">1</option> -->
+                    <!--</select> -->
+                  </li>
+          <!--    <p>If you would like to donate to The National Wildlife Fund, please select a dollar amount (from $0 to $101) from the pull-down menu. Thank you!</p>
+              <li>
+              <label>Optional: select a donation amount</label>
+                  <input type="number" value="0"
+                        max="101" min="0" placeholder="50" />
+              </li>
+              </ul> 
+              addtional form controls that might be entered: middle name, ssn, years of education, street address, city, state, etc.
+-->              
+            </ul>
+              <input type="submit" value="Submit" name="submit" />
+            </fieldset>
+            
+          </form> 
+          
+            <h3>Your Information Will Remain Confidential</h3>
+          <p>The information you provide will be held in confidence and not shared outside of our company. We will never sell or otherwise make your personally identifiable information accessible to other people, companies or organizations.</p>
+        </div><!-- closing maincContent div tag -->
+
+        <!--  This is the footer section, only footer stuff -->
+		<footer>
+			<p>&copy; copyright 2015</p>
+            <p></p>
+		</footer>
+	</body>
+</html>
