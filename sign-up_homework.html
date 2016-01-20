@@ -32,7 +32,7 @@
 				<li> <a href="sign-up_homework.html">Join</a></li>
 				<li> <a href="#">Community</a></li>
                 <li> <a href="#">Mobile App</a></li>
-				<li> <a href="http://www.google.com">Google</a></li>
+				<!--<li> <a href="http://www.google.com">Google</a></li>-->
 			</ul>
 		</nav>
 		<div id="mainContent">
@@ -45,13 +45,13 @@
             <!--action="php/processmyform.php"> <!--this "action" attribute tells the browser the address to where the data captured in the form shoud be sent for storage.-->
             <fieldset>
                <!-- <h2>Create An Account</h2>-->
-            <h3>Tell Us About You and One Favorite Activity</h3>
+            <h3>Tell Us About You and A Favorite Activity</h3>
           
 	     <!-- A Simple HTML5 Form that will use Javascript. The value of the Method attribute can be post or get. post is for a longer data set to be captured and stored. get is for sending very short bits of information to the server. Using get, the information actually travels in the URL itself. While it can be encrypted, often it is not.-->
                 <ul>
                   <li>
                       <!--parent of the label element and the form element-->
-                    <label id="f-name-label">First Name:</label>
+                    <label id="f-name-label" autofocus>First Name:</label>
                     <input type="text" name="first-name" id="f-name-label" placeholder="first name" required />
                   </li>
                   <li>
@@ -151,12 +151,13 @@
                     </select>
                   </li>
                   <li>
-                    <label>Home Zip Code</label>
+                    <label>Home Zip Code (5 numerals, 0-9)</label>
                     <input type="text" required placeholder="90210" pattern="^[0-9]{5}" />
     <!--this is supposed to say that the user must enter numerals 0 thru 9 and must enter 5 digits-->
                   <li>
                       <label>Email Address</label>
-                      <input type="email" name="email" placeholder="tbd@tbd.com" required/>
+                      <input type="email" name="email" placeholder="tbd@tbd.com" required/> 
+                    
                   </li>
                   <li>
                     <label>Your Favorite Activity</label>
@@ -174,28 +175,30 @@
                     </select>
                   </li>
                   <li>
-                    <label>Your Skill (Favorite Activity)</label>
-                    <p>Rate 1 to 5: 1=Expert, 3=Practioner, 5=Novice.</p>
-                    <select name="skill" >
-                      <option value;"0">select</option>
+                    <label>Skill Level (Favorite Activity)</label>
+                    <p>Rate 1 to 5: 1=Expert, 2=Advanced, 3=Practioner, 4=Novice, 5=New to Activity.</p>
+                    <!-- <select name="knowledge" > -->
+                      <input type="number" name="quantity" min="1" max="5" placeholder="enter 1 thru 5" required>
+                    <!-- <select name="skill" form="select">
                       <option value;"5">5</option>
                       <option value;"4">4</option>
                       <option value;"3">3</option>
                       <option value;"2">2</option>
                       <option value;"1">1</option>
-                    </select>
+                    </select> -->
                   </li>
                   <li>
-                    <label>Your Knowledge (Favorite Activity)</label>
-                    <p>Rate 1 to 5: 1=Expert, 3=Practioner, 5=Novice.</p>
-                    <select name="knowledge" >
-                      <option value;"0">select</option>
+                    <label>Knowledge Level (Favorite Activity)</label>
+                    <p>Rate 1 to 5: 1=Expert, 2=Advanced, 3=Practioner, 4=Novice, 5=New to Activity.</p>
+                    <!-- <select name="knowledge" > -->
+                      <input type="number" name="quantity" min="1" max="5" placeholder="enter 1 thru 5" required>
+                      <!--<option value;"0">select</option>
                       <option value;"5">5</option>
                       <option value;"4">4</option>
                       <option value;"3">3</option>
                       <option value;"2">2</option>
-                      <option value;"1">1</option>
-                    </select>
+                      <option value;"1">1</option> -->
+                    <!--</select> -->
                   </li>
           <!--    <p>If you would like to donate to The National Wildlife Fund, please select a dollar amount (from $0 to $101) from the pull-down menu. Thank you!</p>
               <li>
@@ -218,6 +221,7 @@
         <!--  This is the footer section, only footer stuff -->
 		<footer>
 			<p>&copy; copyright 2015</p>
+            <p></p>
 		</footer>
 	</body>
 </html>
