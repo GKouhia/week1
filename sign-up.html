@@ -2,11 +2,11 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
   <script>
   $(function() {
-    //$( "#datepicker" ).datepicker();
+    $("#datepicker").datepicker();
   });
   </script>
  <!-- jQuery CDN link....  
@@ -97,6 +97,12 @@
                            <!--this is supposed to say that the user must enter numerals 0 thru 9 and must enter 5 digits-->
                   
                   </li>
+                  <li>
+                    <label>Please Pick a Date</label>
+                    <input type="date" id="datepicker" name="date" />
+                  </li>
+                  
+                  
                 </ul>
                   <input type="submit" value="Sign Up" name="submit" />
               <!--addtional form controls that might be entered: middle name, ssn, years of education, street address, city, state, etc.-->
